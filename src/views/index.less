@@ -1,0 +1,45 @@
+.container {
+  width: 400px;
+  height: 460px;
+  border-radius: 10px;
+  background-color: wheat;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 10px 18px;
+}
+
+.container .header {
+  height: 36px;
+  font-weight: bold;
+}
+
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  height: 360px;
+}
+
+.container .content>span {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  height: 65px;
+  line-height: 65px;
+}
+.container .content .left,.right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content {
+  .input {
+    white-space: nowrap; /* 文本不换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis; /* 显示省略号 */
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+  }
+}
