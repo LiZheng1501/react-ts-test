@@ -31,7 +31,7 @@ const ThemeComponent: React.FC<ThemeProps> = ({ themeColor = 'black' }) => {
           </span>
         </div>
       </div>
-      <button style={{ backgroundColor: currentTheme === 'black' ? 'white' : 'black', color: currentTheme === 'black' ? 'black' : 'white' }} onClick={toggleTheme}>
+      <button className={'button'} style={{ backgroundColor: currentTheme === 'black' ? 'white' : 'black', color: currentTheme === 'black' ? 'black' : 'white' }} onClick={toggleTheme}>
         {currentTheme === 'black' ? 'Switch to White Theme' : 'Switch to Black Theme'}
       </button>
     </div>
